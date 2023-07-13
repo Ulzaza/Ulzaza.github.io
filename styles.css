@@ -8,6 +8,8 @@ body {
 header {
   background: #f8f8f8;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -24,34 +26,82 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff6ec7;
 }
 
 /* About Section */
 #about {
   background: #fff;
   padding: 50px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 30px;
+  color: #ff6ec7;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* Projects Section */
 #projects {
   background: #f8f8f8;
   padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project {
-  margin-bottom: 30px;
+  margin: 20px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .project img {
   width: 100%;
-  max-width: 400px;
   height: auto;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  color: #777;
 }
 
 /* Contact Section */
 #contact {
   background: #fff;
   padding: 50px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 30px;
+  color: #ff6ec7;
+  margin-bottom: 20px;
 }
 
 form input,
@@ -61,19 +111,33 @@ form textarea {
   width: 100%;
   padding: 10px;
   font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
 form input[type="submit"] {
-  background: #333;
+  background: #ff6ec7;
   color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background: #ff49a6;
 }
 
 /* Add animations to buttons */
-form input[type="submit"]:hover {
-  background: #555;
-  transition: background 0.3s ease-in-out;
+form input[type="submit"]::before {
+  content: "\f1d8";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover::before {
+  transform: rotate(360deg);
 }
