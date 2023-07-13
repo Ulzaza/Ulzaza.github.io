@@ -1,4 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <h1>Ulzhan loves Danny</h1>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Aspiring web developer passionate about creating user-friendly and visually appealing websites. Constantly learning and improving my skills in front-end development.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="project1-screenshot.png" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>Description of Project 1.</p>
+    </div>
+    <div class="project">
+      <img src="project2-screenshot.png" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>Description of Project 2.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+</body>
 </html>
+
