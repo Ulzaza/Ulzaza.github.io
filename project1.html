@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project1.css">
+    <title>Baby Stroller Shop</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Baby Stroller Shop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#best-sellers">Best Sellers</a></li>
+                    <li><a href="#" id="account-link">Account</a></li>
+                    <li><a href="#" id="cart-link">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner"></div>
+        <section class="hero" id="featured">
+            <div class="container">
+                <h2>Discover Comfort & Style for Your Little One</h2>
+                <p>Explore our collection of high-quality baby strollers.</p>
+                <a href="#best-sellers" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="products" id="best-sellers">
+            <div class="container">
+                <!-- Add more product cards here -->
+                <div class="product-card">
+                    <img src="data:image/jpeg;base64,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A5gFcrny9Bmygd7EymFwdTEOMoZtgGI8KgaAL6QN1yPRKZn6kBB87t/4j4GdJ4eDaaTgXBciqLbSW4TC2geyJLjTmVTpT29nA1pw95CuKUsmIqL/ABX+8A35zoxUCQbmlbYgn95FPyuv/jNRK0Nfaap0F9pssS3TpNdmuf8APxmmWbgFsL/2mzU6TW4JpsM+kC1jPDE00b31DAagEAj8ZWpUjDYV6rZUGl9T0H95GnmMzsEQa6AAf5tOocMzBEVtwqj5ACargfAkpC9rudyZIkS0zbpIuUS6JWRSIiAiIgJSViBaRKES+UtA8yssKT3tLbQPBkmJXwuabErKZYEbr8vIxuyg+onvh+DImygfCb3JASBg0sGB0mUlKe1pW0C0LaUaXmWkQPCrIRzQDnViNLWv8b/nJ0yTFxOBVxZgCJZcHJsXUNzMEHWdE4hyij6qSp8v0M0VXkysD4XHxX9Jr2jONPhjrMl639pusFyjU+2+n8I/UyRYDl2mmuW7dzqfh2k9jEV4XwJ6pDOCtPt1Pr2k24fw5UACqAJn0sKBMhVtJbrSxEtPSJWQIiICIiAiIgIiICIiAiIgUtFpWIFsraVlICIlYFItKxAtKylpfECwrLfZiesQPIIJeFl0QKSsRAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/9k=" alt="Stroller 3">
+                    <h3>Stroller Model 3</h3>
+                    <p>Compact and stylish for urban life.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="stroller4.jpg" alt="Stroller 4">
+                    <h3>Stroller Model 4</h3>
+                    <p>All-terrain stroller for adventurous families.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="stroller5.jpg" alt="Stroller 5">
+                    <h3>Stroller Model 5</h3>
+                    <p>Convertible stroller for growing families.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="stroller6.jpg" alt="Stroller 6">
+                    <h3>Stroller Model 6</h3>
+                    <p>Double stroller for twins or siblings.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="stroller7.jpg" alt="Stroller 7">
+                    <h3>Stroller Model 7</h3>
+                    <p>Lightweight and easy to fold.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="stroller8.jpg" alt="Stroller 8">
+                    <h3>Stroller Model 8</h3>
+                    <p>Modern design with advanced features.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="overlay" id="account">
+        <div class="modal">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <button class="close-btn" id="close-account-modal">&times;</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Baby Stroller Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
